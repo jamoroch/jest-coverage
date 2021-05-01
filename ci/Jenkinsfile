@@ -18,10 +18,10 @@ pipeline {
                     publishHTML (target : [allowMissing: false,
                         alwaysLinkToLastBuild: true,
                         keepAll: true,
-                        reportDir: 'coverage',
+                        reportDir: 'test_results',
                         reportFiles: 'index.html',
-                        reportName: 'Code coverage',
-                        reportTitles: 'Code coverage'])
+                        reportName: 'Test Results',
+                        reportTitles: 'Test Results'])
                 }
             }
         }
